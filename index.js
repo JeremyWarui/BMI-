@@ -9,7 +9,7 @@ function bmiCalc(firstInput, secondInput) {
 
     if (bmi < 19.5) {
         $("span").text("Your BMI is " + bmi + ". You are underweight.");
-    } else if (bmi >= 19.6 && bmi <= 21.5) {
+    } else if (bmi >= 19.6 && bmi <= 23.5) {
         $("span").text("Your BMI is " + bmi + ". You have ideal weight.");
     } else if (bmi > 23.5) {
         $("span").text("Your BMI is " + bmi + ". You are obese.");
