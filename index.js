@@ -4,7 +4,7 @@ function bmiCalc(firstInput, secondInput) {
     var secondInput = parseInt(($("#cm").val()));
     var bmi = (firstInput / ((Math.pow((secondInput / 100), 2)))).toFixed(1);
     var heightSquared = Math.pow((secondInput / 100), 2);
-    var weight = Math.round(bmi * heightSquared);
+    var weight = Math.round(20 * heightSquared);
     if (bmi < 18.5) {
         $("span").text("Your BMI is " + bmi + ". You are underweight. Your Ideal weight is " + weight);
     } else if (bmi >= 18.5 && bmi <= 24.9) {
